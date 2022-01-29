@@ -24,19 +24,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.menu,
-.header,
-.footer {
+.header {
   border: 1px solid #fff;
 }
-
 .menu {
-}
-.header {
-  width: 100%;
-}
-.footer {
-  width: 100%;
+  border: 1px solid #fff;
 }
 .content-wrapper {
   display: flex;

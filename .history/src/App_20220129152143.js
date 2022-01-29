@@ -34,7 +34,7 @@ function App() {
             className="menu"
             style={{
               width: menuWidth + "px",
-              display: menuWidth < 40 ? "none" : "block",
+              display: menuWidth < 20 ? "none" : "block",
             }}
             onClick={() => {
               setCount((count) => count + 1);

@@ -24,24 +24,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.menu,
-.header,
-.footer {
-  border: 1px solid #fff;
-}
-
-.menu {
-}
-.header {
-  width: 100%;
-}
-.footer {
-  width: 100%;
-}
 .content-wrapper {
   display: flex;
   width: 100%;
-  flex: 1;
 }
 .content-wrapper > .content {
   flex: 1;

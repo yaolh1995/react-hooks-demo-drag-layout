@@ -39,9 +39,7 @@ function App() {
             onClick={() => {
               setCount((count) => count + 1);
             }}
-            onMouseDown={(event) => {
-              setStart(() => true);
-            }}
+            onMouseDown={(start = true)}
             onMouseMove={(event) => {
               if (start) {
                 console.log(event, "move");

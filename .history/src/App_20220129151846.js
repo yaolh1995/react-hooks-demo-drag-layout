@@ -4,7 +4,7 @@ import { useState } from "react";
 /* 布局 菜单可有可无，菜单宽度可拖拽 */
 
 function App() {
-  const storage = +localStorage.getItem("storageWidth");
+  const storage = localStorage.getItem("storageWidth");
   const [count, setCount] = useState(0);
   const [x, setX] = useState(0);
   const [start, setStart] = useState(false);
@@ -21,21 +21,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div
-          className="header"
-          onClick={() => {
-            setMenuWidth((menuWidth) => 100);
-          }}
-        >
-          banner
-        </div>
+        <div className="header">banner</div>
         <div className="content-wrapper">
           <div
             className="menu"
-            style={{
-              width: menuWidth + "px",
-              display: menuWidth < 40 ? "none" : "block",
-            }}
+            style={{ width: menuWidth + "px" }}
             onClick={() => {
               setCount((count) => count + 1);
             }}
