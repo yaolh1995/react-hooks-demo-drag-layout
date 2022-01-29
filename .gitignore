@@ -22,3 +22,4 @@ yarn-error.log*
 src/App.js
 yarn.lock
 .history
+.idea
